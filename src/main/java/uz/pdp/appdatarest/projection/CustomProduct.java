@@ -23,7 +23,6 @@ public interface CustomProduct {
 
 
 
-
     // Bu variyant ishlamadi
    /* @Value("#{target.category.id}")
     Integer getCategoryId();
