@@ -14,7 +14,9 @@ public interface CustomCategory {
 
     boolean isActive();
 
-    @Value("#{target.parentCategory?.id ?: null}")
-    Integer getParentCategoryId();
+    Category getParentCategory();
+
+    /*@Value("#{target.parentCategory?.id ?: null}")
+    Integer getParentCategoryId();*/
 
 }

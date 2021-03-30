@@ -1,15 +1,12 @@
 package uz.pdp.appdatarest.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
-import org.springframework.stereotype.Repository;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import uz.pdp.appdatarest.entity.InputProduct;
-
-import java.util.Date;
-import java.util.List;
+import uz.pdp.appdatarest.projection.CustomInputProduct;
 
 
-@Repository
+@RepositoryRestResource(path = "inputProduct", collectionResourceRel = "list", excerptProjection = CustomInputProduct.class)
 public interface InputProductRepository extends JpaRepository<InputProduct, Integer> {
 
 

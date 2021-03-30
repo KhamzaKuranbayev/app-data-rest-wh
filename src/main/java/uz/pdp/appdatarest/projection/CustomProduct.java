@@ -13,15 +13,25 @@ public interface CustomProduct {
 
     boolean isActive();
 
-    @Value("#{target.category.id}")
+    Category getCategory();
+
+    Attachment getAttachment();
+
+    Measurement getMeasurement();
+
+    String getCode();
+
+
+
+
+    // Bu variyant ishlamadi
+   /* @Value("#{target.category.id}")
     Integer getCategoryId();
 
     @Value("#{target.photo.id}")
     Integer getPhotoId();
 
     @Value("#{target.measurement.id}")
-    Integer getMeasurementId();
-
-    String getCode();
+    Integer getMeasurementId();*/
 
 }
