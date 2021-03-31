@@ -12,12 +12,12 @@ public interface CustomOutputProduct {
 
     Integer getId();
 
-    Product getProduct();
+    Integer getProduct();
 
     Double getAmount();
 
     Double getPrice();
 
-    Output getOutput();
+    Integer getOutput();
 
 }

@@ -9,7 +9,8 @@ import java.util.Date;
 public interface CustomInputProduct {
 
     Integer getId();
-    Product getProduct();
+
+    Integer getProduct();
 
     Double getAmount();
 

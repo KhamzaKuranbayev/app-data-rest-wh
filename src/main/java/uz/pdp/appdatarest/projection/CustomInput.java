@@ -12,11 +12,11 @@ public interface CustomInput {
 
     Timestamp getDate();
 
-    Warehouse getWarehouse();
+    Integer getWarehouse();
 
-    Supplier getSupplier();
+    Integer getSupplier();
 
-    Currency getCurrency();
+    Integer getCurrency();
 
     String getFactureNumber();
 

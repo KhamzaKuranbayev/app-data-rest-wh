@@ -1,6 +1,5 @@
 package uz.pdp.appdatarest.projection;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.rest.core.config.Projection;
 import uz.pdp.appdatarest.entity.*;
 
@@ -13,11 +12,11 @@ public interface CustomProduct {
 
     boolean isActive();
 
-    Category getCategory();
+    Integer getCategory();
 
-    Attachment getAttachment();
+    Integer getPhoto();
 
-    Measurement getMeasurement();
+    Integer getMeasurement();
 
     String getCode();
 

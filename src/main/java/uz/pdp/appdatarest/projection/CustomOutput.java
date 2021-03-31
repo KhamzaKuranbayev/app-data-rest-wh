@@ -11,11 +11,11 @@ public interface CustomOutput {
 
     Timestamp getDate();
 
-    Warehouse getWarehouse();
+    Integer getWarehouse();
 
-    Client getClient();
+    Integer getClient();
 
-    Currency getCurrency();
+    Integer getCurrency();
 
     String getFactureNumber();
 
